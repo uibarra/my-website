@@ -1,1 +1,255 @@
-<h1>Hello!</h1>
+<!doctype html>
+<html>
+	<head>
+		<title>Ulises Ibarra</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://s10.postimg.org/9s1z714ih/apple_touch_icon.png">
+        <link rel="icon" type="image/png" href="https://s10.postimg.org/et9d8ebyx/favicon_32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://s10.postimg.org/g7103pb89/favicon_16x16.png" sizes="16x16">
+        
+        <script src="https://use.fontawesome.com/d490631490.js"></script>
+        <script>
+            $(document).ready(function(){
+                                
+                //document.change_version_form.submit(); //This changes the page to mobile view
+                $('a#down-arrow').on('click', function(event){
+                    if (this.hash !== "") {
+                        
+                        event.preventDefault();
+                        var hash = this.hash;
+                        
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 700, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+                
+                $('.fab-msg-btn').on('click', function(){
+                	window.open('/thread/new/3');
+                });
+            });
+        </script>
+		<style>
+            @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Risque|Roboto+Condensed');
+			body { background-color: $[background_color]; color: $[text_color]; font-family: $[font]; margin: 0 0;}
+			a { color: $[link_color]; }
+			
+			footer .footer-links { margin-top: 10px; padding-top: 5px; }
+			footer .footer-links, footer .footer-text { font-size: 0.8em; text-align: center; }
+			.widget-notification .new-icon { font-size: x-small; color: #6F6F6F; margin-right: 5px; }
+            #top-ad-banner {
+            	display: none;
+            }
+            .wrapper {
+                /*width: 100%;*/
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            .ulises-banner {
+                overflow-y: hidden;
+                -webkit-flex-direction: row;
+                display: -webkit-flex;
+            	display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100vh;
+                
+                background: url('https://s4.postimg.org/96gbw4m5p/i_WG2r1.jpg') no-repeat fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            a#ulises-logo{
+            	vertical-align: middle;
+                color: #ffffff;
+                text-shadow: 2px 2px 2px #333333;
+                text-decoration: none;
+                font: normal normal bold 5.25rem Roboto Condensed;
+                font-variant: normal;
+                text-transform: uppercase;
+                white-space: normal;
+                word-break: break-all;
+            }
+            #banner-container {
+                width: 100%;
+            }
+           
+            #fa-lg-container{
+            	font-size: 12rem;
+                -webkit-flex-direction: row;
+                display: -webkit-flex;
+            	display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                opacity: .65;
+                text-shadow: 2px 2px 2px #333333;
+                position: relative;
+                margin-top:-160px;
+                height: 10rem;
+                
+                -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 4s; /* Firefox < 16 */
+                -ms-animation: fadein 4s; /* Internet Explorer */
+                -o-animation: fadein 4s; /* Opera < 12.1 */
+                animation: fadein 4s;
+            }
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Firefox < 16 */
+            @-moz-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Safari, Chrome and Opera > 12.1 */
+            @-webkit-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Internet Explorer */
+            @-ms-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Opera < 12.1 */
+            @-o-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+            #about-me{
+            	background-color:black;
+                height: 1000px;
+                width: 100%;
+            }
+            a#down-arrow{
+            	color: #000;
+            }
+            .pc-fab {
+            	display: flex;
+                flex-direction: column;
+                position: fixed;
+                right: 0.25rem;
+                bottom: 1.25rem;
+                z-index: 9999;
+                padding: 10px;
+            }
+            .fab-msg-btn{
+              background-color:#F44336;
+/*               width:60px;
+              height:60px; */
+                width: 4rem;
+                height: 4rem;
+              border-radius:100%;
+              background:#F44336;
+              border:none;
+              outline:none;
+              color:#FFF;
+              font-size:36px;
+              box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+              transition:.3s;  
+              -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+            .fab-msg-btn:focus {
+              transform:scale(1.5);
+            }
+            .uli-header {
+            	background: rgba(0,0,0,.3);
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
+            .uli-header.uli-content {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                position: relative;
+            }
+            .uli-header-links {
+            	font: 2.25rem Raleway;
+                webkit-flex: 0 1 auto;
+                flex: 0 1 auto;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                -webkit-align-items: center;
+                align-items: center;
+                text-transform: uppercase;
+                position: relative;
+            }
+            .uli-header-links a {
+            	color: #fff;
+                flex: 0 1 auto;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            img#pb-icon{
+            	display: inline-block;
+                margin-top: 10px;
+            }
+            
+             @media screen and (max-width: 900px){
+                 a#ulises-logo {
+                 	font-size: 4.25rem;
+                 }
+             }
+            @media screen and (min-width: 300px) and (max-width: 450px){
+                 a#ulises-logo {
+                 	font-size: 3.25rem;
+                 }
+                #fa-lg-container {
+                	font-size: 6rem;
+                    margin-top: -94px;
+                    height: 5rem;
+                }
+             }
+            
+		</style>
+	</head>
+	<body>
+
+        <div class = "wrapper">
+            <div class = "uli-header">
+                <div class = "uli-header-links">
+                	<a href = "http://support.proboards.com/user/226544">
+                       <img id = "pb-icon" src="https://images.proboards.com/hotlink/proboards_white_36x36.png" alt="My Support Profile" target = "_blank"/>
+                    </a>
+                    <a href = "https://www.facebook.com/goldenratio17" target = "_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href = "https://youtube.com/channel/UCdbjYwv69THUAatB-zSD7qQ" target = "_blank">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class = "pc-fab">
+            	<button class = "fab-msg-btn"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+            </div>
+            
+            <div class = "ulises-banner">
+                <a id = "ulises-logo">Ulises Ibarra</a>
+            </div>
+            <div id = "fa-lg-container">
+                <a id = "down-arrow" href = "#about-me"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            </div>
+            <div id="about-me">
+            </div>
+        </div>
+	</body>
+</html>
