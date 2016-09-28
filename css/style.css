@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Risque|Roboto+Condensed');
 
+body {
+    margin: 0;
+}
 .wrapper {
-    /*width: 100%;*/
     margin: 0 auto;
     overflow: hidden;
 }
