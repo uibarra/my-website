@@ -25,23 +25,10 @@
                         });
                     }
                 });
-                
-                $('.fab-msg-btn').on('click', function(){
-                	window.open('/thread/new/3');
-                });
-            });
         </script>
 		<style>
             @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Risque|Roboto+Condensed');
-			body { background-color: $[background_color]; color: $[text_color]; font-family: $[font]; margin: 0 0;}
-			a { color: $[link_color]; }
 			
-			footer .footer-links { margin-top: 10px; padding-top: 5px; }
-			footer .footer-links, footer .footer-text { font-size: 0.8em; text-align: center; }
-			.widget-notification .new-icon { font-size: x-small; color: #6F6F6F; margin-right: 5px; }
-            #top-ad-banner {
-            	display: none;
-            }
             .wrapper {
                 /*width: 100%;*/
                 margin: 0 auto;
@@ -136,34 +123,7 @@
             a#down-arrow{
             	color: #000;
             }
-            .pc-fab {
-            	display: flex;
-                flex-direction: column;
-                position: fixed;
-                right: 0.25rem;
-                bottom: 1.25rem;
-                z-index: 9999;
-                padding: 10px;
-            }
-            .fab-msg-btn{
-              background-color:#F44336;
-/*               width:60px;
-              height:60px; */
-                width: 4rem;
-                height: 4rem;
-              border-radius:100%;
-              background:#F44336;
-              border:none;
-              outline:none;
-              color:#FFF;
-              font-size:36px;
-              box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-              transition:.3s;  
-              -webkit-tap-highlight-color: rgba(0,0,0,0);
-            }
-            .fab-msg-btn:focus {
-              transform:scale(1.5);
-            }
+            
             .uli-header {
             	background: rgba(0,0,0,.3);
                 position: fixed;
@@ -238,10 +198,7 @@
                     </a>
                 </div>
             </div>
-            <div class = "pc-fab">
-            	<button class = "fab-msg-btn"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-            </div>
-            
+                      
             <div class = "ulises-banner">
                 <a id = "ulises-logo">Ulises Ibarra</a>
             </div>
