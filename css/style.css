@@ -8,6 +8,7 @@ body {
     overflow: hidden;
 }
 .ulises-banner {
+    text-align: center;
     display: table;
     position: relative;
     width: 100%;
@@ -27,10 +28,16 @@ a#ulises-logo{
     text-decoration: none;
     font: normal normal bold 5.25rem Roboto Condensed;
     font-variant: normal;
-    text-transform: uppercase;
     white-space: normal;
     word-break: break-all;
 }
+
+.center-middle-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
 #banner-container {
     width: 100%;
 }
