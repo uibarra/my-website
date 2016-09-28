@@ -6,21 +6,16 @@
     overflow: hidden;
 }
 .ulises-banner {
-    overflow-y: hidden;
-    -webkit-flex-direction: row;
-    display: -webkit-flex;
-	display: flex;
-    flex-direction: row;
+    display: table;
+    position: relative;
     width: 100%;
-    height: 100vh;
-    
-    background: url('https://s4.postimg.org/96gbw4m5p/i_WG2r1.jpg') no-repeat fixed;
+    height: 100%;
+    background: url(../photos/bg.jpg) no-repeat center center scroll;
+ 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
 }
 
 a#ulises-logo{
