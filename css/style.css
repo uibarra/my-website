@@ -39,7 +39,7 @@ h3 {
     width: 100%;
     height: 100%;
     
-    background-image: linear-gradient(rgba(68, 66, 66, 0.5),rgba(134, 115, 115, 0.5)), url(http://ulisesibarra.com/photos/bg.jpg), no-repeat center center scroll;
+    background-image: linear-gradient(rgba(68, 66, 66, 0.5),rgba(134, 115, 115, 0.5)), url(http://ulisesibarra.com/photos/bg.jpg);
 
 
     -webkit-background-size: cover;
