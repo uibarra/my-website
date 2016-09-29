@@ -7,27 +7,36 @@
         <link rel="icon" type="image/png" href="https://s10.postimg.org/et9d8ebyx/favicon_32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="https://s10.postimg.org/g7103pb89/favicon_16x16.png" sizes="16x16">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+
         <script src="https://use.fontawesome.com/d490631490.js"></script>
         <title>Ulises Ibarra Website</title>
 
         <script>
             $(document).ready(function(){
-                                
-                $('a#down-arrow').on('click', function(event){
-                    if (this.hash !== "") {
-                        
-                        event.preventDefault();
-                        var hash = this.hash;
-                        
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 700, function(){
-                            window.location.hash = hash;
-                        });
-                    }
-                });
+                $('#birth').typeIt({
+						speed: 50,
+						autoStart: false,
+						loop: true
+					})
+					.tiType('Hi.')
+					.tiPause(500)
+					.tiDelete(2)
+					.tiType('Let me tell you a bit about myself...')
+					.tiPause(1000)
+					.tiType('I burst through my mother on September 17, 1994.')
+					.tiBreak() .tiPause(750)
+					.tiType('after putting her through 3 days of torture, of course...')
+					.tiSettings({speed: 700})
+					.tiType('Blah blah blah and a few years later I am studying computer science at UCI.')
+					.tiPause(750)
+					.tiSettings({speed: 50})
+					.tiDelete()
+					.tiType('That\'s pretty much it, really.');
             });
+
+
         </script>
 	</head>
 	<body>
@@ -49,10 +58,19 @@
                       
             <header class = "ulises-banner">            
                 <div class = "center-middle-text">
-	            	<a id = "ulises-logo">Ulises Ibarra</a>
+	            	<a id = "ulises-logo"><h1>Ulises Ibarra</h1></a>
 	            </div>
             </header>
-            
+            <section id = "about-me">
+            	<div class = "container">
+            		<h2>About Me</h2>
+            		<p id = "birth"></p>
+            		<div class = "things-i-do">
+            			<i class="fa fa-university" aria-hidden="true"></i>
+            		</div>
+            	</div>
+            </section>
+
             
             <!-- <div id="about-me">
             </div> -->
