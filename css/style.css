@@ -17,13 +17,32 @@ html{
 
 h2 {
 
-    font: normal normal 3.25rem Roboto Condensed;  
+    font: normal normal 3.25rem Roboto Condensed;
+    margin: 0 auto;  
+}
 
+h3 {
+
+    vertical-align: middle;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #333333;
+    text-decoration: none;
+    font: normal normal bold 1.25rem Roboto Condensed;
+    font-variant: normal;
+    white-space: normal;
+    word-break: break-all;
 }
 .ulises-banner {
     text-align: center;
     display: table;
     position: relative;
+    z-index: 1;
+    
+}
+
+.ulises-banner::before {
+    z-index: -1;
+
     width: 100%;
     height: 100%;
     background: url(../photos/bg.jpg) no-repeat center center scroll;
@@ -32,7 +51,11 @@ h2 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    opacity: .89;
+
 }
+
+
 
 a#ulises-logo, h1{
 	vertical-align: middle;
@@ -54,8 +77,6 @@ a#ulises-logo, h1{
 #banner-container {
     width: 100%;
 }
-
-
 
 .uli-header {
 	background: rgba(0,0,0,.3);
