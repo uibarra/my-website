@@ -130,12 +130,12 @@ img#pb-icon{
     color: #fff;
 
 }
- @media screen and (max-width: 990px){
+ @media screen and (max-width: 900px){
      a#ulises-logo, h1 {
      	font-size: 4.25rem;
      }
  }
-@media screen and (min-width: 300px) and (max-width: 450px){
+@media screen and (min-width: 200px) and (max-width: 450px){
      a#ulises-logo, h1 {
      	font-size: 3.25rem;
      }
