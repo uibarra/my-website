@@ -16,7 +16,7 @@ html{
     width: 100%;
 }
 
-.h2 {
+h2 {
 
     font: normal normal 3.25rem Roboto Condensed;  
 
@@ -106,16 +106,17 @@ img#pb-icon{
 .about-me {
 
     text-align: center;
-    background-color: #023663;
+    background-color: #0c5492;
 }
 
 #birth {
     font: 2.25rem Raleway;
+    color: #fff;
 }
 
 .things-i-do {
 
-    font: 2.25rem;
+    font-size: 2.25rem;
     color: #fff;
 
 }
