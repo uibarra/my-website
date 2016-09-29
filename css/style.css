@@ -12,6 +12,14 @@ html{
 .wrapper {
     margin: 0 auto;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.h2 {
+
+    font: normal normal 3.25rem Roboto Condensed;  
+
 }
 .ulises-banner {
     text-align: center;
@@ -27,7 +35,7 @@ html{
     background-size: cover;
 }
 
-a#ulises-logo{
+a#ulises-logo, h1{
 	vertical-align: middle;
     color: #ffffff;
     text-shadow: 2px 2px 2px #333333;
@@ -95,6 +103,22 @@ img#pb-icon{
     margin-top: 10px;
 }
 
+.about-me {
+
+    text-align: center;
+    background-color: #023663;
+}
+
+#birth {
+    font: 2.25rem Raleway;
+}
+
+.things-i-do {
+
+    font: 2.25rem;
+    color: #fff;
+
+}
  @media screen and (max-width: 900px){
      a#ulises-logo {
      	font-size: 4.25rem;
