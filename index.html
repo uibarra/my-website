@@ -25,7 +25,7 @@
 
         <script>
             $(document).ready(function(){
-            	 $("#photo-carousel").owlCarousel(
+            	 $("#photo-carousel").owlCarousel({
 					// Most important owl features
 					items : 5,
 
@@ -47,7 +47,7 @@
 					lazyLoad : true,
 					lazyFollow : true,
 					lazyEffect : "fade"
-				);
+				});
 
                 $('#birth').typeIt({
 						speed: 50,
