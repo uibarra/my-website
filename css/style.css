@@ -130,12 +130,12 @@ img#pb-icon{
 
 }
 
-.slick-carousel{
+.owl-carousel{
     display: block;
     margin: 0 auto;
 }
 
-.slick-carousel img{
+.owl-carousel img{
     width: 500px;
     height: auto;
     margin: 0 auto;
