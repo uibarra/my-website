@@ -133,14 +133,15 @@ img#pb-icon{
      a#ulises-logo, h1 {
      	font-size: 4.25rem;
      }
+     h2 {
+        font: normal normal 4.25rem Roboto Condensed;
+     }
  }
 @media screen and (min-width: 200px) and (max-width: 450px){
      a#ulises-logo, h1 {
      	font-size: 3.25rem;
      }
-    #fa-lg-container {
-    	font-size: 6rem;
-        margin-top: -94px;
-        height: 5rem;
-    }
+    h2 {
+        font: normal normal 3.25rem Roboto Condensed;
+     }
  }
