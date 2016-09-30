@@ -25,7 +25,29 @@
 
         <script>
             $(document).ready(function(){
-            	 $("#photo-carousel").owlCarousel();
+            	 $("#photo-carousel").owlCarousel(
+					// Most important owl features
+					items : 5,
+
+					//Basic Speeds
+					slideSpeed : 200,
+					paginationSpeed : 800,
+					rewindSpeed : 1000,
+
+					//Autoplay
+					autoPlay : true,
+					stopOnHover : true,
+
+					// Responsive 
+					responsive: true,
+					responsiveRefreshRate : 200,
+					responsiveBaseWidth: window,
+
+					//Lazy load
+					lazyLoad : true,
+					lazyFollow : true,
+					lazyEffect : "fade"
+				);
 
                 $('#birth').typeIt({
 						speed: 50,
