@@ -129,6 +129,18 @@ img#pb-icon{
     color: #fff;
 
 }
+
+.slick-carousel{
+    display: block;
+    margin: 0 auto;
+}
+
+.slick-carousel img{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
  @media screen and (max-width: 900px){
      a#ulises-logo, h1 {
      	font-size: 4.25rem;
