@@ -17,7 +17,7 @@ html{
 
 h2 {
 
-    font: normal normal 3.25rem Roboto Condensed;
+    font: normal normal 4.25rem Roboto Condensed;
     margin: 0 auto;  
 }
 
@@ -48,8 +48,6 @@ h3 {
     background-size: cover;
     
 }
-
-
 
 
 a#ulises-logo, h1{
@@ -116,11 +114,12 @@ img#pb-icon{
 #about-me {
 
     text-align: center;
-    background-color: #0c5492;
+    background-color: #020406;
+    color: #fff;
 }
 
 #birth {
-    font: 2.25rem Raleway;
+    font: 1.45rem Raleway;
     color: #fff;
 }
 
