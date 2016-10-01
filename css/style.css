@@ -123,6 +123,10 @@ img#pb-icon{
     color: #fff;
 }
 
+.container {
+    height: 28vh;
+}
+
 .things-i-do {
 
     font-size: 2.25rem;
