@@ -17,7 +17,14 @@ html{
 
 h2 {
 
-    font: normal normal 4.25rem Roboto Condensed;
+    vertical-align: middle;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #333333;
+    text-decoration: none;
+    font: normal normal bold 5.25rem Roboto Condensed;
+    font-variant: normal;
+    white-space: normal;
+    word-break: break-all;
     margin: 0 auto;  
 }
 
@@ -115,7 +122,8 @@ img#pb-icon{
 
     text-align: center;
     background-color: #020406;
-    color: #fff;
+    color: #3f3835;
+    height:16rem;
 }
 
 #birth {
